@@ -1,6 +1,6 @@
-Name:
+Name: Bailey Jung
 
-Github Account name: testing testing testing
+Github Account name: jungbail
 
 Link to Assignment on Github: (copy and paste the link to your assignment repo here)
 
