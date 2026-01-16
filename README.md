@@ -2,7 +2,7 @@ Name: Bailey Jung
 
 Github Account name: jungbail
 
-Link to Assignment on Github: (copy and paste the link to your assignment repo here)
+Link to Assignment on Github: https://github.com/jungbail/homework-01-aloha-world-1.git
 
 How many hours did it take you to complete this assignment (estimate)?
 
