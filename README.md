@@ -13,7 +13,7 @@ capacity.
   
 Did you use any external resources (you do not have to cite in class material)? (Cite them below)
 
-* one row per resource
+Gradle, Inc. Part 1: Initializing the Project. Gradle User Manual, version 9.3.0. https://docs.gradle.org/9.3.0/userguide/part1_gradle_init.html (accessed Jan. 16, 2026).
 
 
 (Optional) What was your favorite part of the assignment?
