@@ -2,6 +2,16 @@
 
 Use this file to add example markdown elements you learned about by reading the markdown resources below. You need to add at least 3 different markdown elements you learned about, and a mermaid class diagram (of your choice does not have to follow the assignment. However, if you did use mermaid for the assignment, you can just copy that here). 
 
+<details>
+
+<summary>Collapsed Section</summary>'
+
+I learned that I can make a collapsable section
+
+
+</details>
+
+
 Mermaid is a markdown language that allows you to create diagrams. You can find more information about mermaid in the resources below. It has become popular enough that github has included it as an option in their markdown.  For built in markdown readers, such as the one built into IntelliJ or VSCode, you may need to install a plugin to render the mermaid diagrams. 
 
 > [!NOTE]
