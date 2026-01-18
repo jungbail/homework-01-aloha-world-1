@@ -7,8 +7,10 @@ Use this file to add example markdown elements you learned about by reading the 
 <summary>Collapsed Section Example Element 1</summary>'
 
 I learned that I can make a collapsable section
-'''ruby
-System.out.println("I also learned that if I wanted to add code to this drop down this is how I would do so")
+'''java
+public static void main(String[] args){
+System.out.println("I also learned that if I wanted to add code to this drop down this is how I would do so");
+}
 '''
 
 </details>
