@@ -108,7 +108,7 @@ To help you out, here is the starting UML diagram for the Aloha World applicatio
 title: Aloha World UML
 ---
 classDiagram
-    direction LR
+    direction RL
     AlohaWorld --> Greeter 
     AlohaWorld --> ConsoleView : uses
     ConsoleView --> Greeter : uses
