@@ -59,14 +59,17 @@ Write a short paragraph detailing the flow of the program in your own words. Thi
 
 AlohaWorld is the driver ot the program. It first uses the getName and getLocality methods in ConcoleView to get a string and integer and store those things in String name and int locality. It then makes a new greeter object using the name and locality made first and then called the printGreeter method using the greeter object. The main then establishes a while loop that will keep greeting the client until they say "no".
 
-
+ConsoleView is the class that does the interacting with the client. It first sets up a Scanner object that will store client data from the keyboard. These inputs are then used by Greeter to create a client greeting.
 
 ## Assignment Questions
 
 1. List three additional java syntax items you didn't know when reading the code.  (make sure to use * for the list items, see example below, the backtick marks are used to write code inline with markdown)
    
-   * (example) `final class`
-
+   * `while (!ConsoleView.checkRunAgain())` I was aware while loops exsisted in java but hadn't seen this use of the "!" before in a while loop like this
+   <br></br>
+   * `private static final Scanner SCANNER = new Scanner(System.in);` The syntax for taking information in from the client was new to me
+   <br></br>
+   * `package student;`<br>"Package is a new bit of syntax from python</br><br></br>
 2. For each syntax additional item listed above, explain what it does in your own words and then link a resource where you figured out what it does in the references section. 
 
     * (example) The `final` keyword when used on a class prevents the class from being subclassed. This means that the class cannot be extended by another class. This is useful when you want to prevent a class from being modified or extended[^1] . It is often the standard to do this when a class only contains static methods such as driver or utility classes. Math in Java is an example of a final class[^2] .
