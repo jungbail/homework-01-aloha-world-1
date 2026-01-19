@@ -7,7 +7,52 @@ The following report contains questions you need to answer as part of your submi
 Please link your UML design file here. See resources in the assignment on how to
 link an image in markdown. You may also use [mermaid] class diagrams if you prefer, if so, include the mermaid code here.  You DO NOT have to include Greeting.java as part of the diagram, just the AlohaWorld application that includes: [AlohaWorld.java], [Greeter.java], and [ConsoleView.java].
 
+```mermaid
+---
+title: Aloha World UML
+---
+classDiagram
+   direction LR
+   AlohaWorld --> Greeter
+   AlohaWorld --> ConsoleView : uses
+   ConsoleView --> Greeter : uses
+   class AlohaWorld {
+      - AlohaWorld
+      + main(String[] args) void
+   }
 
+   class Greeter {
+      - name : String
+      - locality : int
+      - localityList : List
+      - HAWAII : int
+      - CHINA : int
+      - ITALY : int
+      - DEFAULT_LOCALITY : int
+      + Greeter(String name)
+      + Greeter(String name, int locality)
+      + String getName()
+      + int getLocality()
+      + void setLocality(int locality)
+      + String greet()
+      + String greet(boolean asciiOnly)
+      -String getLocalityString()
+      + int hashCode()
+      + boolean equals(Object obj)
+      + String toSting()
+      +List<String> getLocalityList()
+   }
+   class ConsoleView {
+    - SCANNER : Scanner 
+    - LOCALITY_OPTIONS : List
+    - ConsoleView()
+    + String getName()
+    + int getLocality()
+    + boolean checkRunAgain()
+    + void printGreeting(String greeting)
+    
+   }
+```
 
 ### Program Flow
 Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
