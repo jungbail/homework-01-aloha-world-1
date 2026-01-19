@@ -57,6 +57,9 @@ classDiagram
 ### Program Flow
 Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
 
+AlohaWorld is the driver ot the program. It first uses the getName and getLocality methods in ConcoleView to get a string and integer and store those things in String name and int locality. It then makes a new greeter object using the name and locality made first and then called the printGreeter method using the greeter object. The main then establishes a while loop that will keep greeting the client until they say "no".
+
+
 
 ## Assignment Questions
 
