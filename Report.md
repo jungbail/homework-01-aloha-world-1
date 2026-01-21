@@ -107,10 +107,12 @@ ConsoleView is the class that does the interacting with the client. It first set
 These questions require deeper thinking of the topic. We don't expect 100% correct answers, but we encourage you to think deeply and come up with a reasonable answer. 
 
 
-1. Why would we want to keep interaction with the client contained to ConsoleView?
+1. Why would we want to keep interaction with the client contained to ConsoleView? 
+<br></br>Right now AlohaWorld starts our program, ConsoleView takes in information, and Greeter manages that information. If we started taking information from the client from multiple locations this could get very messy and going back to edit or troubleshoot code could be very difficult to unravel. Keeping all incoming client info coming through one pipline makes things much more organized for current and future coders to work with.
 
 
 2. Right now, the application isn't very dynamic in that it can be difficult to add new languages and greetings without modifying the code every time. Just thinking programmatically,  how could you make the application more dynamic? You are free to reference Geeting.java and how that could be used in your design.
+<br></br>I think one thing that makes ConsoleView very rigid is that fact that the locality values are all hardcoded. I would use something like a .txt file with a running list of country, value, and that countries greeting. I then would design into my program a method that read the file and assigned the values and greetings to the corresponding countries. Admittedly, I know how I would go about this in python but am not to sure about in java.
 
 
 
