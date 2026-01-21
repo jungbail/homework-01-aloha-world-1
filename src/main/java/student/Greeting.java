@@ -10,7 +10,7 @@ public class Greeting {
 
     private int localityID;
 
-    private static String localityName;
+    private final String localityName;
 
     private static String asciiGreeting;
 
@@ -45,5 +45,8 @@ public class Greeting {
 
     // accessor method that retrieves locality ID
     public int getLocalityID(){ return localityID;}
+
+    // accessor method that retrieves locality name
+    public String getLocalityName(){ return localityName;}
 
 }
