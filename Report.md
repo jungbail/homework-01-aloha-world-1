@@ -63,21 +63,23 @@ ConsoleView is the class that does the interacting with the client. It first set
 
 ## Assignment Questions
 
-1. List three additional java syntax items you didn't know when reading the code.  (make sure to use * for the list items, see example below, the backtick marks are used to write code inline with markdown)
+1. List three additional java syntax items you didn't know when reading the code.  (make sure to use * for the list items, see example below, the backtick marks are used to write code inline with markdown)<br></br>
    
-   * `while (!ConsoleView.checkRunAgain())` I was aware while loops exsisted in java but hadn't seen this use of the "!" before in a while loop like this
-   <br></br>
-   * `private static final Scanner SCANNER = new Scanner(System.in);` The syntax for taking information in from the client was new to me
-   <br></br>
-   * `package student;`<br>"Package is a new bit of syntax from python</br><br></br>
-2. For each syntax additional item listed above, explain what it does in your own words and then link a resource where you figured out what it does in the references section. 
+   * `Integer.parseInt(input);`
+   * `Scanner SCANNER = new Scanner(System.in);` 
+   * `package student;`<br></br>
+2. For each syntax additional item listed above, explain what it does in your own words and then link a resource where you figured out what it does in the references section. <br></br>
 
     * (example) The `final` keyword when used on a class prevents the class from being subclassed. This means that the class cannot be extended by another class. This is useful when you want to prevent a class from being modified or extended[^1] . It is often the standard to do this when a class only contains static methods such as driver or utility classes. Math in Java is an example of a final class[^2] .
+    * `Integer.parseInt(input);` This java method takes a string and returns an integer "9" -> 9
+      https://www.tutorialspoint.com/java/number_parseint.htm
+    * `Scanner SCANNER = new Scanner(System.in);` Scanner is java's way to take information in from the client. Simply put it allows a program user to type info on the keyboard and for that info to then be used in the program.
+      https://zerotomastery.io/blog/java-scanner/
+    * `package` Package is essentially saying hey all of my code for this programs exsists in this file names [blank]. It is used to group related classes.https://www.datacamp.com/doc/java/package <br></br>
 
 3. What does `main` do in Java? 
 
-    Go ahead and answer the question as a short paragraph / few sentences. Notice the indent, this is valid because it is a list item. (erase this line before writing.)
-
+    `main` in Java tells the program where to start running from. A java program will have many many classes but without a `main` java will not know where to start from. A `main` calls something that then begins the cascade of events that call other classes or perform some action.<br></br>
 
 4. What does `toString()` do in Java? Why should any object class you create have a `toString()` method?
 
