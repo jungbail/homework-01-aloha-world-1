@@ -19,13 +19,13 @@ public static void main(String[] args){
 Example element 3
 I learned that I can also use this to write out math equations
 
-$$\left(\frac{x + y^2}{z}\;\right) \cdot\; \left(\sqrt{x}\right)$$
+$$\left(\frac{x + y^2}{z}\right) \cdot \left(\sqrt{x}\right)$$
 
 
 
 ```mermaid
 ---
-title: Aloha World UML Mermaid Diagram
+title: Aloha World UML Mermaid Diagrad
 ---
 classDiagram
    direction LR
