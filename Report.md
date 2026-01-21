@@ -79,22 +79,27 @@ ConsoleView is the class that does the interacting with the client. It first set
 
 3. What does `main` do in Java? 
 
-    `main` in Java tells the program where to start running from. A java program will have many many classes but without a `main` java will not know where to start from. A `main` calls something that then begins the cascade of events that call other classes or perform some action.<br></br>
+    `main` in Java tells the program where to start running from. A java program will have many many classes but without a `main` java will not know where to start from. A `main` calls something that then begins the cascade of events that call other classes or perform some action.
+
 
 4. What does `toString()` do in Java? Why should any object class you create have a `toString()` method?
 
-    Same as above - short answer
+    `toString()` by itself will return the class name and then a hexadecimal representation of the objects hash code. There is a way to overide the hash code default which then allows toString() to just serve as a useful tool to get information about the class. It is important to have a toString() method in any class you create because can supply some really important information to the programmer about the state of the object which could be really important in the debugging process.
+
 
 5. What is javadoc style commenting? What is it used for? 
 
-    Same as above - short answer
+    javadoc styling is a special way of commenting out your code so that those comments are compiled into a html file/webpage that can be used by other programmers to learn about what the classes your created so and how they can effectively use them.
 
 
 6. Describe Test Driving Development (TDD) in your own words. 
 
-    Same as above - short answer    
+    Test Driving Development is a way of programming or rather thinking about programming. Instead of just getting right into writing the code for whatever you're working on, you first write tests for your soon to be code with the intention of your code performing a certian way on those tests. Then you build your code around passing those tests.
 
-7. Go to the [Markdown Playground](MarkdownPlayground.md) and add at least 3 different markdown elements you learned about by reading the markdown resources listed in the document. Additionally you need to add a mermaid class diagram (of your choice does not have to follow the assignment. However, if you did use mermaid for the assignment, you can just copy that there). Add the elements into the markdown file, so that the formatting changes are reserved to that file. 
+
+7. Go to the [Markdown Playground](MarkdownPlayground.md) and add at least 3 different markdown elements you learned about by reading the markdown resources listed in the document. Additionally you need to add a mermaid class diagram (of your choice does not have to follow the assignment. However, if you did use mermaid for the assignment, you can just copy that there). Add the elements into the markdown file, so that the formatting changes are reserved to that file.
+
+   Completed and in MarkdownPlayground.md
 
 
 ## Deeper Thinking Questions
