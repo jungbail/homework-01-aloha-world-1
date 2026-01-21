@@ -8,7 +8,7 @@ package student;
  */
 public class Greeting {
 
-    private int locality;
+    private int localityID;
 
     private static String localityName;
 
@@ -21,26 +21,29 @@ public class Greeting {
 
 
     // for when Greeter only gets locality and  locality name arguments
-    public Greeting(int locality, String localityName){
-        this.locality = locality;
+    public Greeting(int localityID, String localityName){
+        this.localityID = localityID;
         this.localityName = localityName;
     }
 
     //for when Greeting gets locality, locality name, and ascii greeting arguments
-    public Greeting(int locality, String localityName, String asciiGreeting){
-        this.locality = locality;
+    public Greeting(int localityID, String localityName, String asciiGreeting){
+        this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
     }
 
     //for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatting
-    public Greeting(int locality, String localityName, String asciiGreeting, String unicodeGreeting, String formating){
-        this.locality = locality;
+    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formating){
+        this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
         this.unicodeGreeting = unicodeGreeting;
         this.formatting = formatting;
 
     }
+
+    // accessor method that retrieves locality ID
+    public int getLocalityID(){ return localityID;}
 
 }
