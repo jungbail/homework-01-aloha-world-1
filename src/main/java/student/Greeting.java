@@ -8,7 +8,7 @@ package student;
  */
 public class Greeting {
 
-    private int localityID;
+    private final int localityID;
 
     private final String localityName;
 
@@ -16,7 +16,7 @@ public class Greeting {
 
     private final String unicodeGreeting;
 
-    private static String formatting;
+    private String formatStr;
 
     private static final String DEFAULT_GREETING = "Hello";
 
@@ -28,6 +28,7 @@ public class Greeting {
         this.localityName = localityName;
         this.asciiGreeting = DEFAULT_GREETING;
         this.unicodeGreeting = DEFAULT_GREETING;
+        this.formatStr = null;
     }
 
     //for when Greeting gets locality, locality name, and ascii greeting arguments
@@ -35,16 +36,17 @@ public class Greeting {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
-        this.unicodeGreeting = DEFAULT_GREETING;
+        this.unicodeGreeting = asciiGreeting;
+        this.formatStr = null;
     }
 
-    //for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatting
-    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formating){
+    //for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatStr
+    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formatStr){
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
         this.unicodeGreeting = unicodeGreeting;
-        this.formatting = formatting;
+        this.formatStr = formatStr;
 
     }
 
@@ -59,5 +61,20 @@ public class Greeting {
 
     // accessor method that retrieves unicode greeting
     public String getUnicodeGreeting(){ return unicodeGreeting;}
+    
+    public String getFormatStr() { return getFormatStr(false);}
+
+    public String getFormatStr(boolean asciiOnly) {
+        if (formatStr == null) {
+            return asciiGreeting + ", %s!";
+        }
+        String greeting;
+        if (asciiOnly) {
+            greeting = asciiGreeting;
+        } else {
+            greeting = unicodeGreeting;
+        }
+        return String.format(formatStr, greeting);
+    }
 
 }
