@@ -56,7 +56,8 @@ public class Greeting {
         this.formatStr = null;
     }
 
-    /** Constructor for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatStr.
+    /** Constructor for when Greeting gets locality, locality name, ascii greeting arguments,
+     * unicodeGreetings and formatStr.
      *
      * @param localityID number of location
      * @param localityName name of location
@@ -65,7 +66,8 @@ public class Greeting {
      * @param formatStr formatting for greeting
      *
      */
-    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formatStr) {
+    public Greeting(int localityID, String localityName, String asciiGreeting,
+                    String unicodeGreeting, String formatStr) {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
@@ -75,19 +77,19 @@ public class Greeting {
     }
 
     // accessor method that retrieves locality ID
-    public int getLocalityID() { return localityID;}
+    public int getLocalityID() { return localityID; }
 
     // accessor method that retrieves locality name
-    public String getLocalityName() { return localityName;}
+    public String getLocalityName() { return localityName; }
 
     // accessor method that retrieves ascii greeting
-    public String getAsciiGreeting() { return asciiGreeting;}
+    public String getAsciiGreeting() { return asciiGreeting; }
 
     // accessor method that retrieves unicode greeting
-    public String getUnicodeGreeting() { return unicodeGreeting;}
+    public String getUnicodeGreeting() { return unicodeGreeting; }
 
     // overload method for getFormatStr
-    public String getFormatStr() { return getFormatStr(false);}
+    public String getFormatStr() { return getFormatStr(false); }
 
     // method used to greet user based on what formatStr is in the arguments id any
     public String getFormatStr(boolean asciiOnly) {
@@ -106,7 +108,8 @@ public class Greeting {
     //toString override
     @Override
     public String toString(){
-        return String.format("{localityID:%s, localityName:\"%s\", asciiGreeting:\"%s\", unicodeGreeting:\"%s\"}", localityID, localityName, asciiGreeting, unicodeGreeting);
+        return String.format("{localityID:%s, localityName:\"%s\", asciiGreeting:\"%s\", unicodeGreeting:\"%s\"}",
+                localityID, localityName, asciiGreeting, unicodeGreeting);
     }
 
 
