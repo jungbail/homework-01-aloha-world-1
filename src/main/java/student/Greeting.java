@@ -7,23 +7,28 @@ package student;
  *
  */
 public class Greeting {
-    /**int value of locality */
+    /** int value of locality.*/
     private final int localityID;
 
+    /** String value of location name.*/
     private final String localityName;
 
+    /** String greeting in ascii text.*/
     private final String asciiGreeting;
 
+    /** String greeting in unicode.*/
     private final String unicodeGreeting;
 
+    /** Formats string.*/
     private String formatStr;
 
+    /** Default greeting string.*/
     private static final String DEFAULT_GREETING = "Hello";
 
 
 
-    // for when Greeter only gets locality and  locality name arguments
-    public Greeting(int localityID, String localityName){
+    /** Constructor for when Greeter only gets locality and  locality name arguments.*/
+    public Greeting(int localityID, String localityName) {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = DEFAULT_GREETING;
@@ -31,8 +36,8 @@ public class Greeting {
         this.formatStr = null;
     }
 
-    //for when Greeting gets locality, locality name, and ascii greeting arguments
-    public Greeting(int localityID, String localityName, String asciiGreeting){
+    /** Contructor for when Greeting gets locality, locality name, and ascii greeting arguments.*/
+    public Greeting(int localityID, String localityName, String asciiGreeting) {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
@@ -40,8 +45,8 @@ public class Greeting {
         this.formatStr = null;
     }
 
-    //for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatStr
-    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formatStr){
+    /** Constructor for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatStr.*/
+    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formatStr) {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
@@ -51,16 +56,16 @@ public class Greeting {
     }
 
     // accessor method that retrieves locality ID
-    public int getLocalityID(){ return localityID;}
+    public int getLocalityID() { return localityID;}
 
     // accessor method that retrieves locality name
-    public String getLocalityName(){ return localityName;}
+    public String getLocalityName() { return localityName;}
 
     // accessor method that retrieves ascii greeting
-    public String getAsciiGreeting(){ return asciiGreeting;}
+    public String getAsciiGreeting() { return asciiGreeting;}
 
     // accessor method that retrieves unicode greeting
-    public String getUnicodeGreeting(){ return unicodeGreeting;}
+    public String getUnicodeGreeting() { return unicodeGreeting;}
 
     // overload method for getFormatStr
     public String getFormatStr() { return getFormatStr(false);}
