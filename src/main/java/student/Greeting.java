@@ -77,16 +77,24 @@ public class Greeting {
     }
 
     // accessor method that retrieves locality ID
-    public int getLocalityID() { return localityID; }
+    public int getLocalityID() {
+        return localityID;
+    }
 
     // accessor method that retrieves locality name
-    public String getLocalityName() { return localityName; }
+    public String getLocalityName() {
+        return localityName;
+    }
 
     // accessor method that retrieves ascii greeting
-    public String getAsciiGreeting() { return asciiGreeting; }
+    public String getAsciiGreeting() {
+        return asciiGreeting;
+    }
 
     // accessor method that retrieves unicode greeting
-    public String getUnicodeGreeting() { return unicodeGreeting; }
+    public String getUnicodeGreeting() {
+        return unicodeGreeting;
+    }
 
     // overload method for getFormatStr
     public String getFormatStr() { return getFormatStr(false); }
