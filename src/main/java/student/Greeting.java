@@ -12,11 +12,13 @@ public class Greeting {
 
     private final String localityName;
 
-    private static String asciiGreeting;
+    private final String asciiGreeting;
 
-    private static String unicodeGreeting;
+    private final String unicodeGreeting;
 
     private static String formatting;
+
+    private static final String DEFAULT_GREETING = "Hello";
 
 
 
@@ -24,6 +26,8 @@ public class Greeting {
     public Greeting(int localityID, String localityName){
         this.localityID = localityID;
         this.localityName = localityName;
+        this.asciiGreeting = DEFAULT_GREETING;
+        this.unicodeGreeting = DEFAULT_GREETING;
     }
 
     //for when Greeting gets locality, locality name, and ascii greeting arguments
@@ -31,6 +35,7 @@ public class Greeting {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
+        this.unicodeGreeting = DEFAULT_GREETING;
     }
 
     //for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatting
@@ -48,5 +53,11 @@ public class Greeting {
 
     // accessor method that retrieves locality name
     public String getLocalityName(){ return localityName;}
+
+    // accessor method that retrieves ascii greeting
+    public String getAsciiGreeting(){ return asciiGreeting;}
+
+    // accessor method that retrieves unicode greeting
+    public String getUnicodeGreeting(){ return unicodeGreeting;}
 
 }
