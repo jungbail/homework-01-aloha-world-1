@@ -27,7 +27,12 @@ public class Greeting {
 
 
 
-    /** Constructor for when Greeter only gets locality and  locality name arguments.*/
+    /** Constructor for when Greeter only gets locality and  locality name arguments.
+     *
+     * @param localityID number of location
+     * @param localityName name of location
+     *
+     */
     public Greeting(int localityID, String localityName) {
         this.localityID = localityID;
         this.localityName = localityName;
@@ -36,7 +41,13 @@ public class Greeting {
         this.formatStr = null;
     }
 
-    /** Contructor for when Greeting gets locality, locality name, and ascii greeting arguments.*/
+    /** Constructor for when Greeting gets locality, locality name, and ascii greeting arguments.
+     *
+     * @param localityID number of location
+     * @param localityName name of location
+     * @param asciiGreeting greeting in ascii values
+     *
+     */
     public Greeting(int localityID, String localityName, String asciiGreeting) {
         this.localityID = localityID;
         this.localityName = localityName;
@@ -45,7 +56,15 @@ public class Greeting {
         this.formatStr = null;
     }
 
-    /** Constructor for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatStr.*/
+    /** Constructor for when Greeting gets locality, locality name, ascii greeting arguments, unicodeGreetings and formatStr.
+     *
+     * @param localityID number of location
+     * @param localityName name of location
+     * @param asciiGreeting greeting in ascii values
+     * @param unicodeGreeting greeting in unicode characters
+     * @param formatStr formatting for greeting
+     *
+     */
     public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formatStr) {
         this.localityID = localityID;
         this.localityName = localityName;
