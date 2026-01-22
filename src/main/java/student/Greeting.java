@@ -61,9 +61,11 @@ public class Greeting {
 
     // accessor method that retrieves unicode greeting
     public String getUnicodeGreeting(){ return unicodeGreeting;}
-    
+
+    // overload method for getFormatStr
     public String getFormatStr() { return getFormatStr(false);}
 
+    // method used to greet user based on what formatStr is in the arguments id any
     public String getFormatStr(boolean asciiOnly) {
         if (formatStr == null) {
             return asciiGreeting + ", %s!";
