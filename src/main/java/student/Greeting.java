@@ -1,13 +1,13 @@
 package student;
 
 /**
- * This class is a place holder which you will fully implement based on the javadoc
- * 
+ * This class is a place holder which you will fully implement based on the javadoc.
+ *
  * https://cs5004-khoury-lionelle.github.io/hello_world/student/package-summary.html
- * 
+ *
  */
 public class Greeting {
-
+    /**int value of locality */
     private final int localityID;
 
     private final String localityName;
@@ -79,10 +79,12 @@ public class Greeting {
         return String.format(formatStr, greeting);
     }
 
+    //toString override
     @Override
     public String toString(){
         return String.format("{localityID:%s, localityName:\"%s\", asciiGreeting:\"%s\", unicodeGreeting:\"%s\"}", localityID, localityName, asciiGreeting, unicodeGreeting);
     }
+
 
 
 
