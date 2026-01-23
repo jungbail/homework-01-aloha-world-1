@@ -76,28 +76,50 @@ public class Greeting {
 
     }
 
-    /** Accessor method that retrieves locality ID.*/
+    /** Accessor method that retrieves locality ID.
+     *
+     * @return locality ID integer
+     *
+     */
     public int getLocalityID() {
         return localityID;
     }
 
-    /** Accessor method that retrieves locality name.*/
+    /** Accessor method that retrieves locality name.
+     *
+     * @return locality name string
+     *
+     */
     public String getLocalityName() {
         return localityName;
     }
 
-    /** Accessor method that retrieves ascii greeting.*/
+    /** Accessor method that retrieves ascii greeting.
+     *
+     * @return greeting in ascii characters.
+     *
+     */
     public String getAsciiGreeting() {
         return asciiGreeting;
     }
 
-    /** Accessor method that retrieves unicode greeting.*/
+    /** Accessor method that retrieves unicode greeting.
+     *
+     * @return greeting in unicode characters.
+     *
+     */
     public String getUnicodeGreeting() {
         return unicodeGreeting;
     }
 
-    /** Overload method for getFormatStr*/
-    public String getFormatStr() { return getFormatStr(false); }
+    /** Overload method for getFormatStr.
+     *
+     * @return formatting for the greeting.
+     *
+     */
+    public String getFormatStr() {
+        return getFormatStr(false);
+    }
 
     /** Method used to greet user based on what formatStr is in the method arguments.*/
     public String getFormatStr(boolean asciiOnly) {
