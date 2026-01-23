@@ -121,7 +121,12 @@ public class Greeting {
         return getFormatStr(false);
     }
 
-    /** Method used to greet user based on what formatStr is in the method arguments.*/
+    /** Method used to greet user based on what formatStr is in the method arguments.
+     *
+     * @param asciiOnly boolean value depending on ascii or unicode desired greeting.
+     * @return formated greeting
+     *
+     */
     public String getFormatStr(boolean asciiOnly) {
         if (formatStr == null) {
             return asciiGreeting + ", %s!";
